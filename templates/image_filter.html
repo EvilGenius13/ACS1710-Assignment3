@@ -22,9 +22,11 @@ Image Filtering
                 Select your filter:
 
                 <select name="filter_type">
+                    {% for filter in filters %}
                     <!-- TODO: Use a for loop to display an option element for each possible filter 
                         type-->
-                    <option value="blur">blur</option>
+                    <option value="{{filter}}">{{filter}}</option>
+                    {% endfor %}
                 </select>
             </label>
         </p>
@@ -36,7 +38,8 @@ Image Filtering
 {% if image_url %}
 <section id="form_results">
     <p>
-        Here is your filtered image:
+        Here is your filtered image: <br>
+        <img src="{{image_url}}">
     </p>
     <p>
         <!-- TODO: Display the filtered image using the img tag and the URL passed in -->
