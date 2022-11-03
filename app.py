@@ -209,7 +209,7 @@ def gif_search():
                 # - 'q': the search query
                 'q' : gif_choice,
                 # - 'key': the API key (defined above)
-                'key' : 'AIzaSyD6eboLLs7x-b8C6uiH4dSI1nrg1RbQee4',
+                'key' : '',
                 # - 'limit': the number of GIFs requested
                 'limit' : gif_quantity,
             })
